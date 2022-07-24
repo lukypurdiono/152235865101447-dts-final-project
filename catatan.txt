@@ -1,0 +1,27 @@
+konsep project recipe food
+
+- landing page
+- section categories, section favs, dll
+
+ref 1 : https://dribbble.com/shots/17192889-Food-Recipe-Blog-Website-UI-UX
+ref 2 : https://dribbble.com/shots/14441287--Exploration-Food-Website
+ref layout or categories card : https://dribbble.com/shots/11295220-Cookatme/attachments/2904755?mode=media
+ref card item : https://dribbble.com/shots/14046856-EasyMeals-Food-Blog-WordPress-Theme/attachments/5665192?mode=media
+card item : ada category easy or super easy dll
+ref navbar : https://dribbble.com/shots/13534538-EasyMeals-Food-Blog-WordPress-Theme
+ref navbar 2 and color : https://dribbble.com/shots/17709971-Food-Delivery-Landing-Page
+ref detail recipes : https://dribbble.com/shots/14311547-Sashimi-Recipes-Cooking-Site
+ref hero and color : https://dribbble.com/shots/17751772-Landing-Page-Foodies
+ref login page 1 : https://dribbble.com/shots/15252242-Sign-Up-Page
+ref login page 2 : https://dribbble.com/shots/15247887-Daily-UI-001-Hilfbox-Sign-Up-Page
+
+ref color : https://colorhunt.co/palette/f38181fce38aeaffd095e1d3
+
+referensi code
+
+https://github.com/gungsatya/pair-16-dts-mini-project/tree/main/src
+https://github.com/fadhilansyah25/pair-01-dts-mini-project
+
+live app
+https://pair01-dts-mini-project.netlify.app/ => pakai RTK + stuktur folder
+https://pair-16-dts-mini-project.netlify.app/login => ada menu pencarian
