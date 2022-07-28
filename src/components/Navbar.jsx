@@ -2,6 +2,10 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { keluarDariApps } from "../authentication/firebase";
 
+import { NotoPotOfFood } from "../assets/NotoPotOfFood";
+
+import { MaterialSymbolsLogoutRounded } from "../assets/MaterialSymbolsLogoutRounded";
+
 const Navbar = () => {
   const navigate = useNavigate();
 
@@ -11,9 +15,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex bg-tertiary p-4 items-center">
-      <div className="basis-1/4">
-        <p>Food Recipe</p>
+    <div className="flex bg-bcolor p-2 items-center align-middle">
+      <div className="basis-1/4 flex items-center">
+        <NotoPotOfFood className="text-4xl mr-2" />
+        <p className="text-xl font-bold text-primary">Food Recipe</p>
       </div>
       <div className="basis-1/2">
         <ul className="flex justify-evenly">
@@ -23,7 +28,11 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex basis-1/4 justify-end">
-        <button onClick={buttonLogoutOnClickHandler} className="bg-primary">
+        <button
+          onClick={buttonLogoutOnClickHandler}
+          className="flex items-center"
+        >
+          <MaterialSymbolsLogoutRounded className="text-xl mr-1" />
           Log Out
         </button>
       </div>

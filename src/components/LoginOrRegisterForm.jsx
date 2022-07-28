@@ -72,9 +72,9 @@ const LoginOrRegisterForm = ({ loginOrRegister }) => {
           {/* <img src={require("../assets/book.jpg")} alt="book recipe" /> */}
         </div>
         <div className="flex flex-col w-1/2 bg-tertiary rounded-r-xl items-center sm:w-full sm:rounded-lg">
-          <div className="flex flex-col justify-center h-full w-3/4 ">
+          <div className="flex flex-col h-full w-3/4 ">
             {/* title start*/}
-            <div className="flex flex-col h-2/5 justify-center">
+            <div className="flex flex-col h-full justify-center">
               <h1 className="text-4xl font-bold text-primary mb-4 ">
                 {loginOrRegister === "login" ? "Login Page" : "Register Page"}
               </h1>
