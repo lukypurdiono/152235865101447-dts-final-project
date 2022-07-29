@@ -9,10 +9,10 @@ const Hero = () => {
           We serve best recipes for you...
         </h1>
         <div className="flex mt-5">
-          <button className="text-xl bg-tertiary rounded-3xl px-4 py-2 mr-3 text-slate-800 hover:bg-primary hover:text-slate-100">
+          <button className="text-xl hover:bg-tertiary rounded-3xl px-4 py-2 mr-3 hover:text-slate-800 bg-primary text-slate-100">
             Get started
           </button>
-          <button className="text-xl bg-tertiary rounded-3xl px-4 py-2 text-slate-800 hover:bg-primary hover:text-slate-100">
+          <button className="text-xl hover:bg-tertiary rounded-3xl px-4 py-2 hover:text-slate-800 bg-primary text-slate-100">
             More...
           </button>
         </div>
