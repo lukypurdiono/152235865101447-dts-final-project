@@ -68,13 +68,17 @@ const LoginOrRegisterForm = ({ loginOrRegister }) => {
   return (
     <div className="flex h-full bg-bcolor overflow-hidden">
       <div className="flex h-5/6 w-4/5 m-auto ">
-        <div className="flex w-1/2 bg-primary rounded-l-xl sm:hidden">
-          {/* <img src={require("../assets/book.jpg")} alt="book recipe" /> */}
+        <div className="flex w-1/2 bg-white rounded-l-xl sm:hidden">
+          <img
+            src={require("../assets/recipe_book.jpg")}
+            alt="book recipe"
+            className="p-4"
+          />
         </div>
         <div className="flex flex-col w-1/2 bg-tertiary rounded-r-xl items-center sm:w-full sm:rounded-lg">
-          <div className="flex flex-col h-full w-3/4 ">
+          <div className="flex flex-col h-full w-3/4 justify-center">
             {/* title start*/}
-            <div className="flex flex-col h-full justify-center">
+            <div className="flex flex-col justify-center ">
               <h1 className="text-4xl font-bold text-primary mb-4 ">
                 {loginOrRegister === "login" ? "Login Page" : "Register Page"}
               </h1>
@@ -110,17 +114,17 @@ const LoginOrRegisterForm = ({ loginOrRegister }) => {
                   <div className="flex justify-center align-middle">
                     <SimpleIconsFacebook className="mr-2 sm:mr-0 sm:ml-1" />
                     {loginOrRegister === "login"
-                      ? "Sign in with Facebook"
-                      : "Sign up with Facebook"}
+                      ? "Sign in with Fb"
+                      : "Sign up with Fb"}
                   </div>
                 </button>
               </div>
-              <hr className="mt-10 border" />
+              <hr className="mt-5 mb-5 border" />
             </div>
             {/* title end */}
 
             {/* eform start */}
-            <div className="flex flex-col h-3/5">
+            <div className="flex flex-col ">
               <h2 className="text-lg mb-2 text-slate-700 sm:text-base">
                 Email address
               </h2>

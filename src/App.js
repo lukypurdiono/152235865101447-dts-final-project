@@ -3,7 +3,7 @@ import HomePage from "./containers/HomePage";
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <Navbar></Navbar>
       <HomePage></HomePage>
     </div>
