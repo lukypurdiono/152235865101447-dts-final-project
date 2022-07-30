@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 #root {
   height: 100vh;
 }
@@ -11,4 +13,5 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, poppins, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #95E1D3;
 }

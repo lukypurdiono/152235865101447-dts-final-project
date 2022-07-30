@@ -14,7 +14,7 @@ const CategoriesList = () => {
           Categories
         </h1>
       </div>
-      <div className="flex justify-center flex-wrap items-center mx-8">
+      <div className="flex justify-evenly flex-wrap items-center mx-8">
         {error ? (
           <>ada error disini</>
         ) : isLoading ? (

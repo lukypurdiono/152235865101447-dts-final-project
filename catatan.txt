@@ -25,3 +25,8 @@ https://github.com/fadhilansyah25/pair-01-dts-mini-project
 live app
 https://pair01-dts-mini-project.netlify.app/ => pakai RTK + stuktur folder
 https://pair-16-dts-mini-project.netlify.app/login => ada menu pencarian
+
+image ketika di hover ngezoom
+fitur facebook dan google lihat contoh yg bagus banget
+width untuk large screen max-width ref => https://resep-keluarga.netlify.app/
+backgorund klo bisa yg variatif 

@@ -17,11 +17,11 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="w-1/2 flex justify-center items-center mr-6">
+      <div className="w-1/2 flex justify-end items-center ml-6 sm:hidden">
         <img
           src={require("../assets/hero1.png")}
           alt="book recipe"
-          className="p-5 h-3/4"
+          className="p-5 h-1/2"
         />
       </div>
     </div>
