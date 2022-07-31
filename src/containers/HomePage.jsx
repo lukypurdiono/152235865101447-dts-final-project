@@ -9,7 +9,7 @@ const HomePage = () => {
     <div className="bg-bcolor h-screen max-w-7xl mx-auto">
       <Navbar />
       <Hero />
-      <CategoriesList />
+      <CategoriesList id="recipe" />
       <Footer />
     </div>
   );

@@ -1,19 +1,20 @@
 import React from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const DetailCategoryItem = ({ item }) => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  // const handleClick = (category) => {
-  //   navigate(`/category/${category}`);
-  // };
+  const handleClick = (idMeal) => {
+    navigate(`/detail/${idMeal}`);
+  };
   let title = item.strMeal;
   let length = 15;
   let trim = title.substring(0, length);
+
   return (
     <div
       className="bg-bcolor flex flex-col border-primary border-2 w-80 rounded-2xl items-center mt-4 overflow-hidden drop-shadow-xl hover:cursor-pointer"
-      // onClick={() => handleClick(categoriItem.strCategory)}
+      onClick={() => handleClick(item.idMeal)}
     >
       <div>
         <img

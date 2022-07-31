@@ -11,6 +11,7 @@ import { Provider } from "react-redux";
 import DetailCategory from "./containers/DetailCategory";
 
 import { store } from "./app/store";
+import DetailRecipe from "./containers/DetailRecipe";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -28,7 +29,19 @@ root.render(
           ></Route>
           <Route
             path="/category/:category"
-            element={<DetailCategory />}
+            element={
+              <ProtectedComponent>
+                <DetailCategory />
+              </ProtectedComponent>
+            }
+          ></Route>
+          <Route
+            path="/detail/:id"
+            element={
+              <ProtectedComponent>
+                <DetailRecipe />
+              </ProtectedComponent>
+            }
           ></Route>
           <Route path="login" element={<LoginPage />}></Route>
           <Route path="register" element={<RegisterPage />}></Route>

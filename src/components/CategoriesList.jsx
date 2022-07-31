@@ -3,6 +3,7 @@ import React from "react";
 import CategoriesItem from "./CategoriesItem";
 
 import { useCategoriesQuery } from "../services/mealAPI";
+import ReactLoading from "react-loading";
 
 const CategoriesList = () => {
   const { data, error, isLoading } = useCategoriesQuery();
@@ -10,7 +11,7 @@ const CategoriesList = () => {
   return (
     <div className="flex bg-bcolor flex-col">
       <div>
-        <h1 className="flex justify-center font-bold text-slate-900 mb-4 text-3xl">
+        <h1 className="flex justify-center font-bold text-primary mb-4 text-3xl">
           Categories
         </h1>
       </div>
@@ -18,7 +19,13 @@ const CategoriesList = () => {
         {error ? (
           <>ada error disini</>
         ) : isLoading ? (
-          <>Loading data</>
+          <ReactLoading
+            type={"balls"}
+            color={"#F38181"}
+            height={"10%"}
+            width={"10%"}
+            className="mt-auto"
+          />
         ) : (
           data.categories.map((categoriItem) => (
             <CategoriesItem
