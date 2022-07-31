@@ -8,6 +8,7 @@ import LoginPage from "./containers/LoginPage";
 import RegisterPage from "./containers/RegisterPage";
 import ProtectedComponent from "./components/ProtectedComponent";
 import { Provider } from "react-redux";
+import DetailCategory from "./containers/DetailCategory";
 
 import { store } from "./app/store";
 
@@ -24,6 +25,10 @@ root.render(
                 <App />
               </ProtectedComponent>
             }
+          ></Route>
+          <Route
+            path="/category/:category"
+            element={<DetailCategory />}
           ></Route>
           <Route path="login" element={<LoginPage />}></Route>
           <Route path="register" element={<RegisterPage />}></Route>

@@ -10,7 +10,10 @@ export const mealAPI = createApi({
     categories: builder.query({
       query: () => "/json/v1/1/categories.php",
     }),
+    mealByCategory: builder.query({
+      query: (ctg) => `/json/v1/1/filter.php?c=${ctg}`,
+    }),
   }),
 });
 
-export const { useCategoriesQuery } = mealAPI;
+export const { useCategoriesQuery, useMealByCategoryQuery } = mealAPI;

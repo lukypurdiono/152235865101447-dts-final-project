@@ -1,8 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const CategoriesItem = ({ categoriItem }) => {
+  const navigate = useNavigate();
+
+  const handleClick = (category) => {
+    navigate(`/category/${category}`);
+  };
+
   return (
-    <div className="bg-bcolor flex flex-col border-primary border-2 w-80 rounded-2xl items-center mt-4 overflow-hidden drop-shadow-xl">
+    <div
+      className="bg-bcolor flex flex-col border-primary border-2 w-80 rounded-2xl items-center mt-4 overflow-hidden drop-shadow-xl hover:cursor-pointer"
+      onClick={() => handleClick(categoriItem.strCategory)}
+    >
       <div>
         <img
           src={categoriItem.strCategoryThumb}
